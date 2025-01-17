@@ -179,13 +179,13 @@
       <div class="user-projects">
         <div class="images-right">
           <picture>
-            <source type="image/webp" srcset="./src/img/webp/revanth-footer.webp" alt="Personal Website" />
+            <source type="image/webp" srcset="./src/img/webp/foodmunch.webp" alt="Personal Website" />
             <img class="footer-image" alt="Personal Website" src="./src/img/jpg/revanth-footer.jpg" />
 
           </picture>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>Personal Website</h3>
+          <h3>Food Munch Website</h3>
           <div>
             <img
               height="32"
@@ -212,7 +212,48 @@
         </div>
       </div>
 
-      <!-- Additional projects can be added here -->
+       <!-- Additional projects can be added here -->
+<div class="user-projects">
+  <div class="project-container">
+    <div class="images-left">
+      <picture>
+        <source type="image/webp" srcset="./src/img/webp/useractivity.webp" alt="User Activity Logger" />
+        <img class="footer-image" alt="User Activity Logger" src="./src/img/jpg/revanth-footer.jpg" />
+      </picture>
+    </div>
+    <div class="contents" style="text-align: left">
+      <h3>User Activity Logger</h3>
+      <div>
+        <img
+          height="32"
+          width="32"
+          src="https://unpkg.com/simple-icons@3.4.0/icons/node-dot-js.svg"
+          style="filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+        />
+        &nbsp;
+        <img
+          height="32"
+          width="32"
+          src="https://unpkg.com/simple-icons@3.4.0/icons/git.svg"
+          style="filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
+        />
+        &nbsp;
+        <img
+          height="32"
+          width="32"
+          src="https://unpkg.com/simple-icons@3.4.0/icons/mongodb.svg"
+        />
+      </div>
+      <p style="text-align: justify">
+        Developed a user activity logging system to capture and track user interactions on web applications. 
+        The logger logs user actions such as login, page views, clicks, and form submissions in real-time. 
+        It provides valuable insights for improving user experience and detecting anomalies or malicious activity.
+      </p>
+      <a class="project-link" target="_blank" href="https://github.com/revanth-sai-781/UserActivityLogger">Check it out!</a>
+    </div>
+  </div>
+</div>
+
     </section>
 
     <footer class="footer">
@@ -221,4 +262,56 @@
 
     <!-- Import JS: Particles Theme -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-   
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 65,
+            density: { enable: true, value_area: 800 },
+          },
+          color: { value: "#ffffff" },
+          shape: {
+            type: "circle",
+            stroke: { width: 0, color: "#000000" },
+          },
+          opacity: {
+            value: 0.5,
+            anim: { enable: false },
+          },
+          size: {
+            value: 5,
+            random: true,
+            anim: { enable: false },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.4,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 2.5,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: { enable: true, mode: "repulse" },
+            onclick: { enable: true, mode: "push" },
+            resize: true,
+          },
+          modes: {
+            repulse: { distance: 150 },
+            push: { particles_nb: 4 },
+          },
+        },
+        retina_detect: true,
+      });
+    </script>

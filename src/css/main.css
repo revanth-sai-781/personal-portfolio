@@ -12,6 +12,22 @@ html {
     object-fit: cover;
   }
   
+  .project-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .images-left {
+    flex: 1;
+  }
+  
+  .contents {
+    flex: 2;
+    text-align: left;
+  }
+  
 body {
     margin: 0;
     padding: 0;
