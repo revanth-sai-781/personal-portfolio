@@ -11,16 +11,14 @@ html {
     max-height: 350px;
     object-fit: cover;
   }
+
+
   
   .project-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
-  }
-  
-  .images-left {
-    flex: 1;
   }
   
   .contents {

@@ -217,7 +217,7 @@
   <div class="project-container">
     <div class="images-left">
       <picture>
-        <source type="image/webp" srcset="./src/img/webp/useractivity.webp" alt="User Activity Logger" />
+        <source type="image/webp" srcset="./src/img/webp/user-activity-logger.webp" alt="User Activity Logger" />
         <img class="footer-image" alt="User Activity Logger" src="./src/img/jpg/revanth-footer.jpg" />
       </picture>
     </div>
@@ -245,16 +245,268 @@
         />
       </div>
       <p style="text-align: justify">
-        Developed a user activity logging system to capture and track user interactions on web applications. 
-        The logger logs user actions such as login, page views, clicks, and form submissions in real-time. 
-        It provides valuable insights for improving user experience and detecting anomalies or malicious activity.
+        Created a user activity logging system to monitor and record interactions on web applications. 
+        This system captures key user actions, including logins, page views, clicks, and form submissions, in real-time. 
+        It delivers actionable insights to enhance user experience, optimize application performance, and detect irregular or potentially malicious activities.
       </p>
       <a class="project-link" target="_blank" href="https://github.com/revanth-sai-781/UserActivityLogger">Check it out!</a>
     </div>
   </div>
 </div>
+</section>
 
-    </section>
+<section id="collab" style="margin-top: 40px; padding: 40px; background-color: #ffffff;">
+  <h2 style="text-align: center; color: #333; font-size: 2em; margin-bottom: 10px;"> <i class="fa fa-users"></i> Let's Collaborate!</h2>
+  <p style="text-align: center; max-width: 600px; margin: 0 auto; color: #555; font-size: 1.1em;">
+    Got an idea or project in mind? Let's work together to bring it to live! Fill out the form below to get started.
+  </p>
+  <form action="https://formspree.io/f/mlddyekq" method="POST" style="max-width: 600px; margin: 30px auto; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); padding: 20px; background-color: white; border-radius: 8px;">
+    <!-- Name Field -->
+    <div style="margin-bottom: 20px;">
+      <label for="name" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Your Full Name"
+        style="width: 90%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em; color: #333;"
+      />
+    </div>
+    <!-- Email Field -->
+    <div style="margin-bottom: 20px;">
+      <label for="email" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="_replyto"
+        required
+        placeholder="Your Email Address"
+        style="width: 90%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em; color: #333;"
+      />
+    </div>
+    <!-- Message Field -->
+    <div style="margin-bottom: 20px;">
+      <label for="message" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Message</label>
+      <textarea
+        id="message"
+        name="message"
+        required
+        placeholder="Tell me about your project or collaboration idea"
+        rows="5"
+        style="width: 90%; padding: 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 1em; color: #333;"
+      ></textarea>
+    </div>
+    <!-- Submit Button -->
+    <div style="text-align: center;">
+      <button
+        type="submit"
+        style="
+          background-color: #007bff;
+          color: white;
+          padding: 12px 25px;
+          border: none;
+          border-radius: 6px;
+          font-size: 1em;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        "
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</section>
+<!-- Back to Top Button -->
+<div class="back-to-top-container">
+  <button class="back-to-top-btn">
+    <i class="fa fa-arrow-up"></i> Top
+  </button>
+</div>
+<!-- Add the CSS styles -->
+<style>
+  /* Position the Back to Top button */
+  .back-to-top-container {
+    position: fixed;
+    bottom: 80px; /* Place it above the Collaboration button */
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .back-to-top-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff; /* Blue background to match the particles */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .back-to-top-btn i {
+    margin-right: 8px;
+  }
+
+  .back-to-top-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  /* Hide the Back to Top button initially */
+  .back-to-top-container.hidden {
+    display: none;
+  }
+</style>
+
+<!-- Add JavaScript for Scroll Behavior -->
+<script>
+  // Get the button
+  const backToTopBtn = document.querySelector('.back-to-top-btn');
+  
+  // Show the button when the user scrolls down
+  window.onscroll = function() {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      backToTopBtn.style.display = "block"; // Show the button
+    } else {
+      backToTopBtn.style.display = "none"; // Hide the button
+    }
+  };
+
+  // Smooth scroll to the top when clicked
+  backToTopBtn.addEventListener('click', function() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Smooth scrolling effect
+    });
+  });
+</script>
+<!-- Collaboration Button/Icon Section -->
+<div class="collaboration-container">
+  <button class="collaboration-btn">
+    <i class="fa fa-users"></i> Collaboration
+  </button>
+</div>
+
+<!-- Collaboration Form (Hidden by default) -->
+<div class="collaboration-form-container" id="collabForm" style="display: none;">
+  <div class="form-content">
+    <h2>Collaboration Form</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <button type="submit">Submit</button>
+    </form>
+    <button id="closeForm">Close</button>
+  </div>
+</div>
+
+<!-- Add the CSS styles -->
+<style>
+  .collaboration-container {
+    position: fixed;
+    bottom: 80px;  /* Position at the bottom of the page */
+    left: 20px;  /* Position on the left side */
+    z-index: 1000;
+  }
+
+  .collaboration-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007bff; /* Blue background matching particles */
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .collaboration-btn i {
+    margin-right: 8px;
+  }
+
+  .collaboration-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+
+  .collaboration-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+    width: 300px;
+  }
+
+  .form-content h2 {
+    text-align: center;
+  }
+
+  .form-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-content input, .form-content textarea {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .form-content button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .form-content button:hover {
+    background-color: #218838;
+  }
+
+  #closeForm {
+    background-color: #dc3545;
+    margin-top: 10px;
+  }
+
+  #closeForm:hover {
+    background-color: #c82333;
+  }
+</style>
+
+<!-- Add the JavaScript -->
+<script>
+  document.querySelector('.collaboration-btn').addEventListener('click', function() {
+    document.getElementById('collabForm').style.display = 'block'; // Show form
+  });
+
+  document.getElementById('closeForm').addEventListener('click', function() {
+    document.getElementById('collabForm').style.display = 'none'; // Hide form
+  });
+</script>
+
+  </body>
 
     <footer class="footer">
       <p>&copy; Alugolu Sai Revanth, 2025</p>
@@ -266,7 +518,7 @@
       particlesJS("particles-js", {
         particles: {
           number: {
-            value: 65,
+            value: 40,
             density: { enable: true, value_area: 800 },
           },
           color: { value: "#ffffff" },
