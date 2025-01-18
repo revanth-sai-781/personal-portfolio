@@ -178,8 +178,14 @@
       <!-- User Project #1: Personal Website -->
      <!-- User Project #1: Food Munch Website -->
 <div class="user-projects">
-  <div class="project-container" style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start;">
-    <div class="contents" style="text-align: left; flex: 1;">
+  <div class="project-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
+    <div class="images-right" style="margin-bottom: 20px;">
+      <picture>
+        <source type="image/webp" srcset="./src/img/webp/foodmunch.webp" alt="Food Munch Website" />
+        <img class="footer-image" alt="Food Munch Website" src="./src/img/jpg/revanth-footer.jpg" />
+      </picture>
+    </div>
+    <div class="contents" style="text-align: left; width: 100%;">
       <h3>Food Munch Website</h3>
       <div>
         <img
@@ -205,19 +211,19 @@
       </p>
       <a class="project-link" target="_blank" href="https://revanthsr.ccbp.tech/">Check it out!</a>
     </div>
-    <div class="images-right" style="margin-left: 20px;">
-      <picture>
-        <source type="image/webp" srcset="./src/img/webp/foodmunch.webp" alt="Food Munch Website" />
-        <img class="footer-image" alt="Food Munch Website" src="./src/img/jpg/revanth-footer.jpg" />
-      </picture>
-    </div>
   </div>
 </div>
 
 <!-- User Project #2: User Activity Logger -->
 <div class="user-projects">
-  <div class="project-container" style="display: flex; flex-direction: row; align-items: center; justify-content: flex-start;">
-    <div class="contents" style="text-align: left; flex: 1;">
+  <div class="project-container" style="display: flex; flex-direction: column; align-items: center; justify-content: center; margin-bottom: 20px;">
+    <div class="images-right" style="margin-bottom: 20px;">
+      <picture>
+        <source type="image/webp" srcset="./src/img/webp/user-activity-logger.webp" alt="User Activity Logger" />
+        <img class="footer-image" alt="User Activity Logger" src="./src/img/jpg/revanth-footer.jpg" />
+      </picture>
+    </div>
+    <div class="contents" style="text-align: left; width: 100%;">
       <h3>User Activity Logger</h3>
       <div>
         <img
@@ -247,14 +253,41 @@
       </p>
       <a class="project-link" target="_blank" href="https://github.com/revanth-sai-781/UserActivityLogger">Check it out!</a>
     </div>
-    <div class="images-right" style="margin-left: 20px;">
-      <picture>
-        <source type="image/webp" srcset="./src/img/webp/user-activity-logger.webp" alt="User Activity Logger" />
-        <img class="footer-image" alt="User Activity Logger" src="./src/img/jpg/revanth-footer.jpg" />
-      </picture>
-    </div>
   </div>
 </div>
+
+<!-- Inline CSS for Mobile View -->
+<style>
+  @media (max-width: 768px) {
+    .project-container {
+      flex-direction: column; /* Stack image and text */
+      align-items: center;
+    }
+    .images-right {
+      margin-bottom: 10px; /* Reduce the gap between the image and title on mobile */
+    }
+    .contents {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  /* Large Device (Laptop/Tablet) */
+  @media (min-width: 769px) {
+    .project-container {
+      flex-direction: row; /* Display image and text side by side */
+      align-items: center;
+    }
+    .images-right {
+      margin-left: 20px;
+    }
+    .contents {
+      text-align: left;
+      flex: 1;
+    }
+  }
+</style>
+
 
       
 </section>
